@@ -1,0 +1,2 @@
+[06-Sep-2018 22:25:08 America/Mexico_City] PHP Fatal error:  Class 'Zizaco\Entrust\EntrustPermission' not found in /home/digita13/public_html/judicatura/app/Models/Security/Permission.php on line 8
+[06-Sep-2018 22:25:17 America/Mexico_City] PHP Fatal error:  Class 'Zizaco\Entrust\EntrustRole' not found in /home/digita13/public_html/judicatura/app/Models/Security/Role.php on line 8

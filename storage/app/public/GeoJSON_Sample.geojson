@@ -1,0 +1,158 @@
+{ "type": "FeatureCollection",
+    "features": [
+                 { "type": "Feature",
+                 "geometry": {
+                 "type": "Point",
+                 "coordinates": [-97.1941593, 18.7934761]
+                 },
+                 "properties": {
+                     "name": "K.m. 53.5 Carret. Tehuacan-Ver S/N, Col. Paseo Nuevo  Telefonos: (272)72-6-83-49  (272)72-6-78-53  e-mail: gabygrd72@hotmail.com",
+                     "snippet": "Servicio Cuautlapan Doncellas",
+                     "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/6.jpg"
+                 }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-96.8202478, 18.83797]
+                     },
+                     "properties": {
+                         "name": "Carret. Fed. Cordoba-Ver S/N, Desviacion a Omealca  Telefono: (278)73-8-80-99  e-mail: reynaar@hotmail.com",
+                         "snippet": "Energeticos de Cordoba Matriz",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/1.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-96.963532, 18.885481]
+                     },
+                     "properties": {
+                         "name": "Autopista Mexico Veracruz, Km. 291 Col. El Dorado  Telefonos: (271)71-6-23-44 (271)73-6-17-97  e-mail: guadalupe_5642@outlook.es",
+                         "snippet": "Combustibles y Servicios Esmeralda",
+                         "imagefile":"https://lealtadeucomb.lealtaddigitalsoft.mx/public/storage/1.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-97.4047722, 18.6257727]
+                     },
+                     "properties": {
+                         "name": "Carretera Fed. Tehuacan Orizaba Km. 14.5 S/N  Telefonos: (238)37-1-42-12 (238)37-1-42-13  e-mail: joseluisgears@hotmail.com",
+                         "snippet": "Servicio Cuautlapan Chapulco",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/6.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-97.1987151, 18.5436831]
+                     },
+                     "properties": {
+                         "name": "Predio Atzompa S/N.  Santa Ma. del Monte  Telefono: (236)37-4-92-39   e-mail: enc_stama@hotmail.com",
+                         "snippet": "Energeticos Santa Maria del Monte",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/1.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-97.1608651, 18.8271456]
+                     },
+                     "properties": {
+                         "name": "Av. Juarez No. 125, Col. Aurora  Telefono:  (272)72-7-50-42  e-mail: cajanogales@hotmail.com",
+                         "snippet": "Energeticos de Cordoba Nogales",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/1.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-97.0266527, 18.8748058]
+                     },
+                     "properties": {
+                         "name": "Km. 325 Carret. Fed. Mexico - Veracruz S/N  Telefono: (271)71-3-10-68 (271)71-3-10-04  e-mail: enc_scu_0673@hotmail.com",
+                         "snippet": "Servicio Cuautlapan Matriz",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/1.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-97.4095184, 18.4645378]
+                     },
+                     "properties": {
+                         "name": "Calz. Adolfo Lopez Mateos No. 2400, Fracc. Zona  Telefono: (238)38-2-86-32 al 34 Ext. 103  e-mail: gasolineria.ete@outlook.com",
+                         "snippet": "Servicio Cuatlapan Tehuacan",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/6.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-97.380482, 18.441289]
+                     },
+                     "properties": {
+                         "name": "Av. De la Juventud No. 2906, Col. Humilladero  Telefono: (238)38-3-95-40  e-mail: gasolineria_ele@hotmail.com",
+                         "snippet": "Gasolineria Ele",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/4.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-98.1710557, 19.04267]
+                     },
+                     "properties": {
+                         "name": "Calle 12 Oriente No. 3215, Col. Resurgimiento  Telefono: (222)2-34-53-86  e-mail: monse_enc_sole@hotmail.com",
+                         "snippet": "Energeticos Sole",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/1.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-98.2403712, 19.0536327]
+                     },
+                     "properties": {
+                         "name": "Calle 55 Sur No. 2119, Col. Ampliacion Reforma  Telefonos: (222)68-84-322 y (222)68-84-327  e-mail: gasolinerazavaleta@gmail.com",
+                         "snippet": "Gasolinera Zavaleta",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/3.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-97.8547039, 20.0081882]
+                     },
+                     "properties": {
+                         "name": "Libramiento Bicentenario 46, Col. Centro  Telefono: (764)76-3-32-62  e-mail: encargadaahuacatlan@gmail.com ",
+                         "snippet": "Energeticos Ahuacatlan",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/1.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-98.17322, 19.0475763]
+                     },
+                     "properties": {
+                         "name": "Boulevard Xonaca, No. 3216, Col. Vista Hermosa  Telefono: (272)72-7-50-42  e-mail: servicioalfabravococa@gmail.com",
+                         "snippet": "Servicio Alfa Bravo Coca",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/1.jpg"
+                     }
+                 },
+                 { "type": "Feature",
+                     "geometry": {
+                         "type": "Point",
+                         "coordinates": [-96.6735754, 16.7788925]
+                     },
+                     "properties": {
+                         "name": "Litro Exacto  Teléfono: (52)95-11-18-33-16  e-mail: litroexactoocotlan@gmail.com",
+                         "snippet": "Litro Exacto",
+                         "imagefile":"https://eucomb.lealtaddigitalsoft.mx/public/storage/8.jpg"
+                     }
+                 }
+                 ]
+}

@@ -1,0 +1,243 @@
+[08-Sep-2018 21:05:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[08-Sep-2018 21:06:04 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[05-Oct-2018 02:45:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[06-Oct-2018 12:38:44 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[18-Nov-2018 14:40:42 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[18-Nov-2018 14:40:45 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[05-Dec-2018 22:52:21 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[05-Dec-2018 22:52:24 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[16-Dec-2018 15:54:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[16-Dec-2018 15:55:06 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[22-Dec-2018 04:21:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[22-Dec-2018 04:21:40 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[22-Dec-2018 22:13:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[23-Dec-2018 14:18:44 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[02-Jan-2019 18:00:09 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[02-Jan-2019 18:00:13 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[06-Jan-2019 18:46:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[06-Jan-2019 18:46:52 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[07-Jan-2019 03:35:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[07-Jan-2019 03:36:02 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[24-Jan-2019 00:53:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[24-Jan-2019 00:53:09 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[25-Jan-2019 18:44:17 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[25-Jan-2019 18:44:20 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[26-Jan-2019 07:35:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[26-Jan-2019 07:35:55 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[15-Feb-2019 05:37:35 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[15-Feb-2019 05:37:38 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[07-Mar-2019 07:05:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[07-Mar-2019 07:05:12 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[13-Mar-2019 10:25:33 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[13-Mar-2019 10:25:34 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[10-Apr-2019 11:47:50 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[10-Apr-2019 11:47:59 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[10-Apr-2019 21:51:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[10-Apr-2019 21:51:48 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[26-May-2019 20:05:20 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[30-May-2019 23:36:40 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[01-Jun-2019 18:15:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[11-Jun-2019 08:49:35 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[11-Jun-2019 08:49:37 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[27-Jun-2019 06:34:16 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[04-Jul-2019 23:46:11 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[01-Aug-2019 17:30:44 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[06-Aug-2019 23:58:09 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[11-Aug-2019 07:17:32 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[23-Aug-2019 10:09:07 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[16-Sep-2019 18:58:17 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[17-Sep-2019 07:12:30 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[24-Sep-2019 00:38:18 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[26-Sep-2019 04:30:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[26-Sep-2019 09:31:53 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[28-Sep-2019 23:30:18 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[05-Oct-2019 22:46:45 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[10-Oct-2019 07:32:20 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[15-Oct-2019 11:31:37 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[19-Oct-2019 17:06:30 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[20-Oct-2019 12:20:34 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[21-Oct-2019 02:58:40 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[24-Oct-2019 10:30:37 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[25-Oct-2019 09:04:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[28-Oct-2019 16:37:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[05-Nov-2019 00:33:53 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[07-Nov-2019 09:31:33 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[09-Nov-2019 23:12:01 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[10-Nov-2019 13:14:29 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[15-Nov-2019 06:56:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[17-Nov-2019 20:07:05 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[18-Nov-2019 07:36:32 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[22-Nov-2019 09:06:06 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[27-Nov-2019 17:20:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[28-Nov-2019 21:42:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[30-Nov-2019 19:02:30 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[02-Dec-2019 03:03:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[02-Dec-2019 22:45:47 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[07-Dec-2019 23:36:13 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[08-Dec-2019 21:58:02 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[14-Dec-2019 18:44:15 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[20-Dec-2019 06:48:26 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[25-Dec-2019 00:04:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[26-Dec-2019 08:03:39 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[30-Dec-2019 22:27:54 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[01-Jan-2020 00:40:37 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[06-Jan-2020 04:30:56 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[07-Jan-2020 14:04:57 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[08-Jan-2020 02:51:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[12-Jan-2020 19:40:06 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[17-Jan-2020 18:50:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[20-Jan-2020 08:26:27 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[21-Jan-2020 13:52:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[23-Jan-2020 16:09:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[29-Jan-2020 02:41:15 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[08-Feb-2020 23:43:19 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[10-Feb-2020 14:46:53 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[13-Feb-2020 15:58:06 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[16-Feb-2020 06:49:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[20-Apr-2020 04:54:24 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9
+[21-Apr-2020 14:06:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Form' not found in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/button.php on line 5
+[21-Apr-2020 22:09:43 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/digita13/public_html/survey/resources/views/vendor/laravel-form-builder/buttongroup.php on line 9

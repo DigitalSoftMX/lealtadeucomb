@@ -1,0 +1,8 @@
+[06-Sep-2018 22:40:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'URL' not found in /home/digita13/public_html/judicatura/resources/views/roles/create_permission.blade.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/judicatura/resources/views/roles/create_permission.blade.php on line 52
+[06-Sep-2018 22:41:09 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'URL' not found in /home/digita13/public_html/judicatura/resources/views/roles/index_permission.blade.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/digita13/public_html/judicatura/resources/views/roles/index_permission.blade.php on line 15

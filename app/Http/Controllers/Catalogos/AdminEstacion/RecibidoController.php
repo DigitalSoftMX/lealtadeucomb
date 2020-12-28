@@ -1,0 +1,34 @@
+<?php namespace App\Http\Controllers\AdminEstacion;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Core\Util\CatalogTrait;
+
+   class RecibidoController extends Controller {
+
+
+    use CatalogTrait;
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->field_list = ['identificador'=>'Folio','number_usuario'=>'Membresía','conta'=>'Número','premio'=>'Premio','dtip'=>'Tipo', 'name'=>'Lugar','punto'=>'Puntos','nombre'=>'Estado','estad_uno'=>'Fecha de elaboración','id'=>'Acciones'];
+        //$this->field_list = ['folio'=>'Folio','id_product'=>'Producto','name'=>'Estacion','points'=>'Puntos','value'=>'Valor','qr_memberships'=>'Membresia','name_status'=>'Status','name_state'=>'Estado', 'name_exchange'=>'Tipo','todate'=>'Fecha','id'=>'Acciones'];
+        $this->name = 'Recibido';
+        $this->name_plural = 'fa fa-newspaper-o';
+        $this->form = 'App\Core\Forms\Lealtad\RecibidoForm';
+        $this->model = 'App\Models\Lealtad\Exchange';
+        $this->url_prefix = 'recibidoexchange';
+        $validation_add = [
+       //     'folio'=>'required|max:25',
+        ];
+        $validation_edit = $validation_add;
+        $this->setValidatorAdd($validation_add);
+        $this->setValidatorEdit($validation_edit);
+    }
+}
