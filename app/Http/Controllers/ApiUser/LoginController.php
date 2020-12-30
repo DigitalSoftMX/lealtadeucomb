@@ -175,9 +175,13 @@ class LoginController extends Controller
         //dd($exis);
         if($exis == null){
        
+              $restuser = Memberships::orderBy('id', 'desc')->limit(1)->value('id_users');
+       
               $mem = User::join('role_user', 'users.id', '=', 'role_user.user_id')
                                ->where('role_user.role_id', '=', 5)
-                               ->orderBy('users.id', 'desc')->limit(1)->value('username');
+                               ->where('users.id', '=', $restuser)
+                               ->value('username');
+                    
                      if($mem == null){
                          $nuevo = 2000001;
                      }

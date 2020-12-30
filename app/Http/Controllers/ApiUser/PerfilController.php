@@ -65,7 +65,7 @@ class PerfilController extends Controller
      $existe = User::where('email', '=', $username)->value("id");
     // dd($existe);
     
-    if($password != ""){
+    if($request->password != ""){
      if($existe != null){
    
       if($request->app_name != null){
