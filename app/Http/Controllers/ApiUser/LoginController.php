@@ -154,8 +154,8 @@ class LoginController extends Controller
     $fecha = date('Y-m-d') ; // Fecha
             
      $name = $request->name;
-     $first_name = $request->app_name;
-     $second_name = $request->apm_name;
+     $first_name = $request->first_name;
+     $second_name = $request->second_name;
      $email = $request->email;
      $sex = $request->sex;
      $phone = $request->telefono;
@@ -195,8 +195,8 @@ class LoginController extends Controller
                User::create([
                  'name' => $request->name,
                  'username' => $nuevo,
-                 'first_surname' => $request->app_name,
-                 'second_surname' => $request->apm_name,
+                 'first_surname' => $request->first_name,
+                 'second_surname' => $request->second_name,
                  'password' => $password,
                  'email' => $request->email,
                  'sex' => $request->sex,
