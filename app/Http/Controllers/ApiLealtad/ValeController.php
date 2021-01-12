@@ -237,7 +237,7 @@ class ValeController extends Controller
                                     $nombre = "contacto@digitalsoftlealtad.com";
                                     $de = "contacto@digitalsoftlealtad.com";
                                     $para = $corre;
-                                    $asunto  = "Se cagaron los puntos correctamente";
+                                    $asunto  = "Se cargo el vale correctamente";
                                                                                         
                                    $data = array( 'de' => $de, 'para' => $para, 'asunto' => $asunto, 'nombre' => $nombre, 'puntos' => $tot, 'total' => $poi);
                                                                         
@@ -290,7 +290,7 @@ class ValeController extends Controller
                                     $nombre = "contacto@digitalsoftlealtad.com";
                                     $de = "contacto@digitalsoftlealtad.com";
                                     $para = $corre;
-                                    $asunto  = "Se cagaron los puntos correctamente";
+                                    $asunto  = "Se cargo el vale correctamente";
                                                                                         
                                    $data = array( 'de' => $de, 'para' => $para, 'asunto' => $asunto, 'nombre' => $nombre, 'puntos' => $tot, 'total' => $poi);
                                                                         

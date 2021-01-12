@@ -195,6 +195,121 @@ class LoginController extends Controller
                User::create([
                  'name' => $request->name,
                  'username' => $nuevo,
+                 'first_surname' => $request->app_name,
+                 'second_surname' => $request->apm_name,
+                 'password' => $password,
+                 'email' => $request->email,
+                 'sex' => $request->sex,
+                 'phone' => $request->telefono,
+                 'active' => 0,
+                  ]);
+
+               $id_use = User::where('email', '=', $request->email)->value('id');
+
+               $dat = Role_User::create([
+                'user_id' => $id_use,
+                'role_id' => 5,
+                ]);
+                
+                Memberships::create([
+                     'number_usuario' => $nuevo,
+                     'active' => 1,
+                     'todate' => $fecha,
+                     'totals' => 100,
+                     'visits' => 0,
+                     'id_users' => $id_use,
+                  ]);
+                  
+                  Client::create([
+                     'user_id' => $id_use,
+                     'current_balance' => 0,
+                     'shared_balance' => 0,
+                     'points' => 0,
+                     'image' => $nuevo,
+                     'birthdate' => '0000-00-00',
+                  ]);
+                  
+                    
+                    $id_imagen = User::where('username', '=', $nuevo)->value('image');
+                    
+                    if($id_imagen == null){
+                    $Base64Img = 'data:image/png;base64, '. DNS2D::getBarcodePNG($nuevo, 'QRCODE'). ' ';
+                    list(, $Base64Img) = explode(';', $Base64Img);
+                    list(, $Base64Img) = explode(',', $Base64Img);
+                    $Base64Img = base64_decode($Base64Img);
+                    file_put_contents("img/usuarioimg/$nuevo.jpg", $Base64Img); 
+                    
+                    $t = User::find($id_use);
+                    $t->image = $id_imagen;
+                    $t->save();
+                    }
+                
+                $items = (string)$nuevo;
+                $respuesta = json_encode(array('resultado' => $items));           
+          }
+          else{
+           $respuesta = json_encode(array('resultado' => "Otro usuario ya tiene este mismo correo electronico"));           
+          }
+       }
+       else{
+           $respuesta = json_encode(array('resultado' => "No es un correo electronico"));           
+       }
+    }
+    else{
+           $respuesta = json_encode(array('resultado' => "No es un correo electronico"));           
+       }
+    
+       
+        return response($respuesta);
+    }
+    
+    public function registrarios(Request $request){
+    
+    date_default_timezone_set("America/Mexico_City");
+    $fecha = date('Y-m-d') ; // Fecha
+            
+     $name = $request->name;
+     $first_name = $request->first_name;
+     $second_name = $request->second_name;
+     $email = $request->email;
+     $sex = $request->sex;
+     $phone = $request->telefono;
+     
+       
+     $password = Hash::make($request->password);
+    
+        //verifica que tenga un correo y no se duplique
+        $matches = null;
+        $valema = (1 === preg_match('/^[A-z0-9\\._-]+@[A-z0-9][A-z0-9-]*(\\.[A-z0-9_-]+)*\\.([A-z]{2,6})$/', $email, $matches));
+        
+        //dd($valema);
+    if($email != ""){    
+        if($valema == true){
+       
+             $exis = User::where('email', '=', $email)->value('id');
+        //dd($exis);
+        if($exis == null){
+       
+              $restuser = Memberships::orderBy('id', 'desc')->limit(1)->value('id_users');
+       
+              $mem = User::join('role_user', 'users.id', '=', 'role_user.user_id')
+                               ->where('role_user.role_id', '=', 5)
+                               ->where('users.id', '=', $restuser)
+                               ->value('username');
+                    
+                     if($mem == null){
+                         $nuevo = 2000001;
+                     }
+                     else{
+                     $nuevo = $mem + 1;
+                     }
+                     
+                $password = Hash::make($request->password);
+                
+                
+               User::create([
+                 'name' => $request->name,
+                 'username' => $nuevo,
                  'first_surname' => $request->first_name,
                  'second_surname' => $request->second_name,
                  'password' => $password,
@@ -262,7 +377,7 @@ class LoginController extends Controller
        
         return response($respuesta);
     }
-    
+
     public function cerrar(Request $request){
         
         $username = $request->username;
