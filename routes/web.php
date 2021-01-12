@@ -393,6 +393,7 @@ Route::get('error', ['as' => 'page.error', 'uses' => 'ExamplePagesController@err
 
     Route::post('apilogin', 'ApiUser\LoginController@login');
     Route::post('apiregistrar', 'ApiUser\LoginController@registrar');
+    Route::post('apiregistrarios', 'ApiUser\LoginController@registrarios');
     Route::get('apiperfil' , 'ApiUser\PerfilController@perfil');
     Route::get('apiperfilios' , 'ApiUser\PerfilController@perfilIOS');
     Route::post('apiperfilupdate', 'ApiUser\PerfilController@perfilupdate');

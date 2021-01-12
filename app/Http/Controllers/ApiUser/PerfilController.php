@@ -36,7 +36,7 @@ class PerfilController extends Controller
     public function perfilIOS(Request $request){
     
      $username = $request->username;
-      $perfilall = User::select('id', 'name', 'first_surname as first_name', 'email', 'sex')
+      $perfilall = User::select('id', 'name', 'first_surname as first_name', 'second_surname as second_name', 'phone', 'email', 'sex')
           ->where('username', '=', $username)->first();
      $existe = User::where('username', '=', $username)->value("id");
      
