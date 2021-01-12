@@ -36,7 +36,11 @@ class PerfilController extends Controller
     public function perfilIOS(Request $request){
     
      $username = $request->username;
-      $perfilall = User::select('id', 'name', 'first_surname as first_name', 'second_surname as second_name', 'phone', 'email', 'sex')
+      $perfilall = User::select('id', 'name', 'first_surname as first_name', 'second_surname as second_name', 'email', 'sex',
+        \DB::raw('(CASE 
+                        WHEN users.phone != " " THEN users.phone
+                        ELSE " "
+                        END) AS phone'))
           ->where('username', '=', $username)->first();
      $existe = User::where('username', '=', $username)->value("id");
      
