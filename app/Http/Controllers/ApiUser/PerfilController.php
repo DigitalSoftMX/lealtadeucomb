@@ -80,7 +80,7 @@ class PerfilController extends Controller
       $t->second_surname = $request->apm_name;
       $t->email = $request->email;
       $t->sex = $request->sex;
-      //$t->phone = $request->telefono;
+      $t->phone = $request->telefono;
       $t->save();
       }
       else{
@@ -91,7 +91,7 @@ class PerfilController extends Controller
       $t->second_surname = $request->second_name;
       $t->email = $request->email;
       $t->sex = $request->sex;
-      //$t->phone = $request->telefono;
+      $t->phone = $request->telefono;
       $t->save();
           
       }
@@ -112,7 +112,7 @@ class PerfilController extends Controller
       $t->second_surname = $request->apm_name;
       $t->email = $request->email;
       $t->sex = $request->sex;
-      //$t->phone = $request->telefono;
+      $t->phone = $request->telefono;
       $t->save();
       }
       else{
@@ -122,7 +122,7 @@ class PerfilController extends Controller
       $t->second_surname = $request->second_name;
       $t->email = $request->email;
       $t->sex = $request->sex;
-      //$t->phone = $request->telefono;
+      $t->phone = $request->telefono;
       $t->save();
           
       }
