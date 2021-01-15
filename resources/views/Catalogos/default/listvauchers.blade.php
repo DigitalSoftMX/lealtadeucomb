@@ -45,30 +45,10 @@
 @endsection
 
 @push('js')
-<script>
-  
-    function FFunction(){
 
-  var values = $("#membresia").val();
-  var values1 = $("#min").val();
-  var values2 = $("#max").val();
-  var url = '{{$catalog->getUrlPrefix()}}';
-  var name = $("#nombre").val();
-  var app_name = $("#app_name").val();
-  var apm_name = $("#apm_name").val();
-  var email = $("#email").val();
-  var folio = $("#folio").val();
-  var parametros = { "membresia" : values,
-                     "min" : values1,
-                     "max" : values2,
-                     "url" : url,
-                     "app_name" : app_name,
-                     "apm_name" : apm_name,
-                     "email" : email,
-                     "folio" : folio,
-                     "nombre" : name};
+  <script>
 
-    fields = {!! json_encode( array_keys($catalog->field_list) ) !!};
+   fields = {!! json_encode( array_keys($catalog->field_list) ) !!};
     url_add = '{{$catalog->getUrlPrefix()}}/add/';
     url_delete = '{{$catalog->getUrlPrefix()}}/destroy/';
     url_edit = '{{$catalog->getUrlPrefix()}}/edit/';
@@ -82,15 +62,9 @@
         $('#datatables').DataTable( {
             "processing": true,
             "responsive": true,
-            "fnRowCallback": customFnRowCallback,
             "dom": 'Bfrtip',
-            "destroy": true, 
-            "ajax": {
-               "url": '{{$catalog->getUrlPrefix()}}jfilter',
-               "type": 'POST',
-               "data": parametros,
-             },
-            "deferRender": true,
+            "ajax": "{{$catalog->getUrlPrefix()}}jlist",
+            "fnRowCallback": customFnRowCallback,
             "columns": columns,
             "lengthMenu": [
              [10, 25, 50, -1],
@@ -116,25 +90,9 @@
                 "targets": -1,
                 "visible": false,
                 "render": function(data, type, row){ 
-                    if('{{$show}}' == ""){
-                        
-                          $("#membresia").val('');
-                          $("#min").val('');
-                          $("#max").val('');
-                          $("#nombre").val('');
-                          $("#app_name").val('');
-                          $("#apm_name").val('');
-                          $("#email").val('');
-                          $("#folio").val('');
-                          $('#myModal').modal('hide');
-                          
-                      if('{{$catalog->getUrlPrefix()}}' == "pagos"){  
-                        @permission("$mod")
-                        return '<a href="'+url_edit+data+'"><span class="material-icons">cloud_upload</span></a>'       
-                        @endpermission
-                        @permission("$eli")
-                            + '<a href="#" onClick="warnBeforeRedirect('+data+');" ><span class="material-icons">delete</span></a>'    
-                        @endpermission
+                    if('{{$show}}' == ""){  
+                      if('{{$catalog->getUrlPrefix()}}' == "countvouchers"){  
+                         return data
                         }
                         else if('{{$catalog->getUrlPrefix()}}' == "movement"){  
                          return data
@@ -144,7 +102,7 @@
                             return '<a href="'+url_edit+data+'"><span class="material-icons">edit</span></a>'       
                         @endpermission
                         @permission("$eli")
-                            + '<a href="#" onClick="warnBeforeRedirect('+data+');" ><span class="material-icons">delete</span></a>'    
+                            + '<a href="#" onClick="warnBeforeRedirect('+data+');"><span class="material-icons">delete</span></a>'    
                         @endpermission
                         @permission("$ver")
                             + '<a href="'+url_ver+data+'"><span class="material-icons">remove_red_eye</span></a>'    
@@ -175,14 +133,14 @@
                 return nRow;
             }
             
-            if('{{$catalog->getUrlPrefix()}}' == "userclient"){  
+            /*/if('{{$catalog->getUrlPrefix()}}' == "userclient"){  
                 if(aData['activo'] == 1){
-                    $('td:eq(5)', nRow).html( 'Activo' );
+                    $('td:eq(6)', nRow).html( 'Activo' );
                 }else{
-                    $('td:eq(5)', nRow).html( 'Inactivo' );
+                    $('td:eq(6)', nRow).html( 'Inactivo' );
                 }
                 return nRow;
-            }
+            }*/
             
             if('{{$catalog->getUrlPrefix()}}' == "empresas"){
                 if(aData['activo'] == 1){
@@ -221,16 +179,10 @@
                     $('td:eq(5)', nRow).html( '$' + aData['ganancia'] );
                 return nRow;
             }
-            
-            if('{{$catalog->getUrlPrefix()}}' == "doblepuntos"){  
-                if(aData['active'] == 1 ){ 
-                    $('td:eq(0)', nRow).html( '<span class="badge badge-default" style="background-color:#20cc20">Activo</span>'); }
-                else{ $('td:eq(0)', nRow).html( '<span class="badge badge-default" style="background-color:#FF0900">Inactivo</span>'); }
-                return nRow;
-                }  
         }
-}
+        
   </script>
+
     <script>
   function warnBeforeRedirect(data) {
 
