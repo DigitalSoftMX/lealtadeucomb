@@ -159,6 +159,12 @@
                     <p>{{ __('Clientes') }}</p>
                 </a>
             </li>
+             <li>
+                <a class="nav-link" href="{{ url('adminvoucher') }}">
+                    <i class="material-icons">view_list</i>
+                    <p>{{ __('Administración de Vales') }}</p>
+                </a>
+            </li>
             @endpermission
             
            @permission('adminE_exchange-sho')

@@ -188,6 +188,16 @@ trait CatalogTrait
               return view($this->tpl_prefix . 'list2', array('catalog' => $this))->with('ins', $ins)->with('mod', $mod)->with('eli', $eli)->with('show', $show)->with('ver', $ver)->with('fac', $fac);
               }
           }
+          else if($url == "adminvoucher"){
+            $ids = \Auth::user()->id;
+            $rol = Role_User::where('user_id', '=', $ids)->value('role_id');
+            if ($rol == 3) { //verifica si es un usuario
+                 return view($this->tpl_prefix . 'listvauchers', array('catalog' => $this))->with('ins', $ins)->with('mod', $mod)->with('eli', $eli)->with('show', $show)->with('ver', $ver)->with('fac', $fac); 
+               }
+               else{
+                  return view($this->tpl_prefix . 'listfilter', array('catalog' => $this))->with('ins', $ins)->with('mod', $mod)->with('eli', $eli)->with('show', $show)->with('ver', $ver)->with('fac', $fac)->with('fil', $fil);
+               }
+          }
           else if($valfil == true){
               return view($this->tpl_prefix . 'listfilter', array('catalog' => $this))->with('ins', $ins)->with('mod', $mod)->with('eli', $eli)->with('show', $show)->with('ver', $ver)->with('fac', $fac)->with('fil', $fil);
           }
