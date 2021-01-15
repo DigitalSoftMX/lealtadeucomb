@@ -64,7 +64,6 @@
             "responsive": true,
             "dom": 'Bfrtip',
             "ajax": "{{$catalog->getUrlPrefix()}}jlist",
-            "fnRowCallback": customFnRowCallback,
             "columns": columns,
             "lengthMenu": [
              [10, 25, 50, -1],
@@ -90,30 +89,8 @@
                 "targets": -1,
                 "visible": false,
                 "render": function(data, type, row){ 
-                    if('{{$show}}' == ""){  
-                      if('{{$catalog->getUrlPrefix()}}' == "countvouchers"){  
-                         return data
-                        }
-                        else if('{{$catalog->getUrlPrefix()}}' == "movement"){  
-                         return data
-                        }
-                        else{
-                        @permission("$mod")
-                            return '<a href="'+url_edit+data+'"><span class="material-icons">edit</span></a>'       
-                        @endpermission
-                        @permission("$eli")
-                            + '<a href="#" onClick="warnBeforeRedirect('+data+');"><span class="material-icons">delete</span></a>'    
-                        @endpermission
-                        @permission("$ver")
-                            + '<a href="'+url_ver+data+'"><span class="material-icons">remove_red_eye</span></a>'    
-                        @endpermission
-                        @permission("$fac")
-                            + '<a href="'+url_fac+data+'"><span class="material-icons">notifications_active</span></a>'    
-                        @endpermission
-                        }
-                    }else{            
                         return data
-                    }    
+                        
                 }
             }],
             "buttons": [
@@ -122,92 +99,8 @@
                 "text": 'Excel <span class="material-icons">cloud_download</span>'
             }],
         });  
-        function customFnRowCallback( nRow, aData, iDisplayIndex, iDisplayIndexFull )
-        { 
-            if('{{$catalog->getUrlPrefix()}}' == "userempresas"){  
-                if(aData['activo'] == 1){
-                    $('td:eq(6)', nRow).html( 'Activo' );
-                }else{
-                    $('td:eq(6)', nRow).html( 'Inactivo' );
-                }
-                return nRow;
-            }
-            
-            /*/if('{{$catalog->getUrlPrefix()}}' == "userclient"){  
-                if(aData['activo'] == 1){
-                    $('td:eq(6)', nRow).html( 'Activo' );
-                }else{
-                    $('td:eq(6)', nRow).html( 'Inactivo' );
-                }
-                return nRow;
-            }*/
-            
-            if('{{$catalog->getUrlPrefix()}}' == "empresas"){
-                if(aData['activo'] == 1){
-                    $('td:eq(6)', nRow).html( 'Activo' );
-                }else{
-                    $('td:eq(6)', nRow).html( 'Inactivo' );
-                }
-                if(aData['imglogo'] != null){
-                    $('td:eq(3)', nRow).html( '<img style="width:145px;height:118px;" src="../storage/app/logos/' + aData['imglogo'] + '" />' );
-                }
-                return nRow;
-            }
-            
-             if('{{$catalog->getUrlPrefix()}}' == "pagos"){
-                 $('td:eq(0)', nRow).html( '$' + aData['pago'] );
-                if(aData['autorizado'] == 1){
-                    $('td:eq(3)', nRow).html('<span class="badge badge-default" style="background-color:#00bcd4">Generado</span>');
-                } 
-                else if(aData['autorizado'] == 2){
-                    $('td:eq(3)', nRow).html('<span class="badge badge-default" style="background-color:#20cc20">Autorizado</span>');
-                }
-                else if(aData['autorizado'] == 3){
-                    $('td:eq(3)', nRow).html('<span class="badge badge-default" style="background-color:#FF0900">No Autorizado</span>');
-                }
-                if(aData['archivo'] != null){
-                    $('td:eq(2)', nRow).html('<a href="download/'+aData['archivo']+'"><span class="label label-primary">Descargar</span></a>');
-                }
-                return nRow;
-            }
-            
-             if('{{$catalog->getUrlPrefix()}}' == "catprecios"){
-                    $('td:eq(1)', nRow).html( '$' + aData['costo'] );
-                    $('td:eq(2)', nRow).html( '' + aData['costo_timbre'] );
-                    $('td:eq(3)', nRow).html( '$' + aData['costo_admin'] );
-                    $('td:eq(4)', nRow).html( '' + aData['costo_timbre_admin'] );
-                    $('td:eq(5)', nRow).html( '$' + aData['ganancia'] );
-                return nRow;
-            }
-        }
         
   </script>
-
-    <script>
-  function warnBeforeRedirect(data) {
-
-      var url_delete = '{{$catalog->getUrlPrefix()}}/destroy/';
-      var linkURL = url_delete+data;
-      //console.log(linkURL)
-
-            Swal({
-                title: 'Estas seguro?',
-                text: "De eliminarlo!",
-                type: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, Eliminar!',
-                cancelButtonText: 'Cerrar',
-            }).then((result) => {
-                if (result.value) {
-                    window.location.href = linkURL;
-                }
-            })
-
-        }
-  </script>
-
 
 
 @endpush
