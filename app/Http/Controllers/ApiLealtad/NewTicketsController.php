@@ -92,7 +92,6 @@ public function principal(Request $request){
                                                     'id_gas' => $verififolioestation,
                                                     'number_gas' => $esnew,
                                                     'descrip' => 'pendiente',
-                                                    'created_at' => $flechahor,
                                                     ]); 
                                                     //dd($dato);
                                                     // VERIFICA QUE SI SE GUARDO EN LA BD
@@ -204,7 +203,6 @@ public function principalformulario(Request $request){
                                                     'id_gas' => $verififolioestation,
                                                     'number_gas' => $nameverififolioestation,
                                                     'descrip' => 'pendiente',
-                                                    'created_at' => $flechahor,
                                                     ]); 
                                                     //dd($dato);
                                                     // VERIFICA QUE SI SE GUARDO EN LA BD
