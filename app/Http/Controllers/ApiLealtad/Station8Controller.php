@@ -41,7 +41,7 @@ public function principal(Request $request){
         
        	if($count >= 1){
    	 	
-   	 	$respuesta = Tickets::select('number_valor', 'number_ticket', 'number_gas')->where('descrip', '=', "pendiente")->where('id_gas', '=', 8)->get();
+   	 	$respuesta = Tickets::select('number_valor', 'number_ticket', 'number_gas')->where('descrip', '=', "pendiente")->where('id_gas', '=', 8)->where('created_at', '>=', "2021-01-25 00:00:00")->where('created_at', '<=', "2021-01-26 23:23:23")->get();
         $contenedor = array();
      	
    	 	    $d = array();
