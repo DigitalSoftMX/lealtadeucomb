@@ -41,22 +41,24 @@ public function principal(Request $request){
         
        	if($count >= 1){
    	 	
-   	 	$respuesta = Tickets::select('number_valor', 'number_ticket', 'number_gas')->where('descrip', '=', "pendiente")->where('id_gas', '=', 8)->where('created_at', '>=', "2021-02-01 00:00:00")->where('created_at', '<=', "2021-02-02 23:23:23")->get();
+   	 	$respuesta = Tickets::select('number_valor', 'number_ticket', 'number_gas')->where('descrip', '=', "pendiente")->where('id_gas', '=', 8)->orderBy('id', 'asc')->limit(1)->get();
+
         $contenedor = array();
      	
    	 	    $d = array();
    	    	$d = json_encode($respuesta);
    	 	    $json = json_encode($d);
-
+           
             $station = Station::where('id', '=', 8)->value('ip');
-            $url = 'http://'.$station.'/sales/public/recordlealtad.php';
-            //dd($json);
+            //$url = 'http://187.154.79.128/sales/public/recordlealtadV2.php';
+            $url = 'http://'.$station.'/sales/public/recordlealtadV2.php';
+           // dd($json);
             $ch = curl_init($url); 
             curl_setopt($ch, CURLOPT_HEADER, false);                                                                     
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");                                                                     
             curl_setopt($ch, CURLOPT_POSTFIELDS, $json);                                                                  
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
-            curl_setopt($ch, CURLOPT_TIMEOUT, 30);  
+            curl_setopt($ch, CURLOPT_TIMEOUT, 300);  
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                       
                 'Content-Type: application/json','Content-Length: ' . strlen($json)) );                                                  
                 $result = curl_exec($ch);
@@ -64,7 +66,7 @@ public function principal(Request $request){
             //echo ' '. $result;
              curl_close($ch);
            
-             var_dump(json_decode($result, true));
+             //var_dump(json_decode($result, true));
              //var_dump(json_encode($result, true));
              
         
@@ -72,7 +74,7 @@ public function principal(Request $request){
            	//dd($array = json_decode($result, true));
            	 $array = json_decode($result, true);
            	
-           	if($result == null){
+            if($result == null){
            	    echo $resultado = json_encode(array('resultado' => 'No existen datos'));
            	}
            	else{
@@ -109,10 +111,10 @@ public function principal(Request $request){
     
    private function Sumar($decimal, $folionew, $tinew, $canew, $stnew, $fhnew, $hrnew, $etnew){
         
-        $idticket = Tickets::where('number_ticket', '=', $folionew)->where('number_valor', '=', $decimal)->value('id');
+        $idticket = Tickets::where('number_ticket', '=', $folionew)->where('number_valor', '=', $decimal)->orderBy('id', 'desc')->limit(1)->value('id');
         if($etnew == "L"){
             
-                      $descript = "Pertenece a otro beneficio";
+                       $descript = "Pertenece a otro beneficio";
                        $ticket = Tickets::find($idticket);
                        $ticket->descrip = $descript;
                        $ticket->save();   
@@ -191,11 +193,12 @@ public function principal(Request $request){
                                   $exfolio=Tickets::
                                      where('number_ticket', '=', $folionew)
                                    ->where('number_valor', '=', $decimal)
-                                   ->where('descrip', '=', "pendiente")
-                                   ->value('id');
-                               
-                            if($fvcuatro == true){ //24 horas activado
-                               if($exfolio != null){ //no existe el folio o duplicidad
+                                   //->where('descrip', '=', "pendiente")
+                                   ->count();
+
+                            if($fvcuatro == false){ //24 horas activado
+                               //dd($exfolio);
+                               if($exfolio == 1){ //no existe el folio o duplicidad
                                
                                                     if($producto == "Diesel"){ //poducto es disel se divide a cuarta parte
                                                         /* $newpoints = ($puntos / 4);
@@ -213,7 +216,8 @@ public function principal(Request $request){
                             
                                                $acumuladopoint=\DB::table('tickets')->select(\DB::raw('SUM(punto) as Total'))->where('number_usuario', '=', $membresia)->whereDate('created_at', '=', $fechaserv)
                                                                 ->value('Total');                 
-                                               $resultpoint = ($acumuladopoint + $newpoints);
+                                               //$resultpoint = ($acumuladopoint + $newpoints);
+                                               $resultpoint = 0;
                                                if($resultpoint <= $tpuntos){ //maximo 80 punto por dia acumulados
                                                     
                                                     $descript = "puntos sumados";
